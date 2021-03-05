@@ -39,10 +39,11 @@
   const modelViewer = document.querySelector('#paused-change-demo');
 
   self.setInterval(() => {
-    modelViewer.animationName = modelViewer.animationName === 'mixamo.com' ?
+    modelViewer.animationName = modelViewer.animationName === 'shuffle' ?
       'Static Pose': 'mixamo.com';
   }, 500.0);
 })();
+</script>
 <!-- Loads <model-viewer> for modern browsers: -->
  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
   </script>
