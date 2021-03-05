@@ -30,7 +30,7 @@
   <!-- OPTIONAL: Include prismatic.js for Magic Leap support -->
   <!--<script src="https://unpkg.com/@magicleap/prismatic/prismatic.min.js"></script>-->
 
-<model-viewer loading="eager" id="paused-change-demo" camera-controls src="Models/Ch16_nonPBR@Shuffling.gltf" camera-controls autoplay animation-name="shuffle" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="usdz_ch16_nonpbr_shuffling__1614913944630.usdz" alt="Medical/Health Information" ar-scale="auto" camera-controls=""  style="width: 95%; height: 500px" exposure="0.5"> <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1 px solid black; position: absolute; top: 20px; right: 20px; ">
+<model-viewer loading="eager" id="paused-change-demo" camera-controls autoplay animation-name="shuffle" camera-controls src="Models/Ch16_nonPBR@Shuffling.gltf" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="usdz_ch16_nonpbr_shuffling__1614913944630.usdz" alt="Medical/Health Information" ar-scale="auto" camera-controls=""  style="width: 95%; height: 500px" exposure="0.5"> <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1 px solid black; position: absolute; top: 20px; right: 20px; ">
       👋 AR Click Here
   </button> 
 </model-viewer>
