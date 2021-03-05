@@ -40,7 +40,7 @@
 
   self.setInterval(() => {
     modelViewer.animationName = modelViewer.animationName === 'shuffle' ?
-      'Static Pose': 'mixamo.com';
+      'Static Pose': 'shuffle';
   }, 500.0);
 })();
 </script>
