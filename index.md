@@ -1,4 +1,4 @@
-## AVERtek 
+## AVERtek's XR-NOW 
 
 ---
 
@@ -30,11 +30,19 @@
   <!-- OPTIONAL: Include prismatic.js for Magic Leap support -->
   <!--<script src="https://unpkg.com/@magicleap/prismatic/prismatic.min.js"></script>-->
 
-<model-viewer id="reveal" loading="eager" camera-controls src="Models/Ch16_nonPBR@Shuffling.gltf" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="usdz_ch16_nonpbr_ shuffling__1614913944630.usdz" alt="Medical/Health Information" auto-rotate="" auto-rotate-delay="0" ar-scale="auto" camera-controls=""  style="width: 95%; height: 500px" exposure="0.5"> <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1 px solid black; position: absolute; top: 20px; right: 20px; ">
+<model-viewer id="paused-change-demo" loading="eager" camera-controls autoplay animation-name="mixamo.com" camera-controls src="Models/Ch16_nonPBR@Shuffling.gltf" ar="" ar-modes="scene-viewer webxr quick-look" ios-src="usdz_ch16_nonpbr_ shuffling__1614913944630.usdz" alt="Medical/Health Information" ar-scale="auto" camera-controls=""  style="width: 95%; height: 500px" exposure="0.5"> <button slot="ar-button" style="background-color: white; border-radius: 8px; border: 1 px solid black; position: absolute; top: 20px; right: 20px; ">
       👋 AR Click Here
   </button> 
 </model-viewer>
+<script>
+(() => {
+  const modelViewer = document.querySelector('#paused-change-demo');
 
+  self.setInterval(() => {
+    modelViewer.animationName = modelViewer.animationName === 'mixamo.com' ?
+      'Static Pose': 'mixamo.com';
+  }, 500.0);
+})();
 <!-- Loads <model-viewer> for modern browsers: -->
  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
   </script>
